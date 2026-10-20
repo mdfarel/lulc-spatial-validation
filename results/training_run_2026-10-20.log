@@ -1,0 +1,31 @@
+training sites:
+  kalimantan_forest:  22051 px  cloud 8.6%  bare/sparse vegetation, built-up, cropland, grassland, herbaceous wetland, permanent water, shrubland, tree cover
+  kalimantan_coast:  32347 px  cloud 7.4%  bare/sparse vegetation, built-up, cropland, grassland, herbaceous wetland, mangroves, permanent water, shrubland, tree cover
+  java_urban:  17613 px  cloud 0.0%  bare/sparse vegetation, built-up, cropland, grassland, permanent water, shrubland, tree cover
+  java_crop:  19385 px  cloud 0.0%  bare/sparse vegetation, built-up, cropland, grassland, herbaceous wetland, mangroves, permanent water, shrubland, tree cover
+  sumatra_plantation:  19994 px  cloud 1.7%  bare/sparse vegetation, built-up, cropland, grassland, herbaceous wetland, permanent water, shrubland, tree cover
+  sulawesi_coast:  32108 px  cloud 0.3%  bare/sparse vegetation, built-up, cropland, grassland, herbaceous wetland, mangroves, permanent water, shrubland, tree cover
+validation sites (disjoint):
+  papua_forest:  16340 px  cloud 4.7%  bare/sparse vegetation, cropland, grassland, herbaceous wetland, permanent water, shrubland, tree cover
+  sumatra_wetland:  22599 px  cloud 7.3%  bare/sparse vegetation, built-up, cropland, grassland, herbaceous wetland, mangroves, permanent water, shrubland, tree cover
+  java_east_mixed: too few valid pixels
+
+train 143498 px / valid 38939 px / 12 features
+
+spatially independent overall accuracy: 35.6%
+class                     n  user acc
+tree cover             8000     50.2%
+shrubland              4055     29.8%
+grassland              8000     35.0%
+cropland               4014     19.1%
+built-up               4000     63.6%
+bare/sparse vegetation    399      6.8%
+permanent water        5689     60.0%
+herbaceous wetland     4627     38.6%
+mangroves               155      2.1%
+
+top features: swir2 0.155, ndvi 0.100, ndwi 0.097, red 0.094, blue 0.084
+
+saved models/lulc_rf_v1.joblib (1602.6 MB)
+{"overall_accuracy": 0.3559}
+exit 0
